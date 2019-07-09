@@ -1,6 +1,6 @@
 # Spanglify
 
-Spanglify converts an English sentence into a _Spanglish_ sentence. Spanglish is the broad term used for the hybrid language created by combining English and Spanish. Although there are several variations of Spanglish, this gem will use what is known as code-switching (using both English and Spanish words or phrases in the same sentence).
+Spanglify converts a string in English to a string in _Spanglish_. Spanglish is the broad term used for the hybrid language created by combining English and Spanish. Although there are several variations of Spanglish, this gem will use what is known as code-switching (using both English and Spanish words or phrases in the same sentence).
 
 ## Installation
 
