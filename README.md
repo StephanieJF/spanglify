@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```require 'spanglify'```
+
+```Spanglify::Spanglify.process("I like to party, but I don't like to dance.")
+		#=> "Me gusta to party, pero I don't like to dance."```
+
 
 ## Development
 
