@@ -13,24 +13,23 @@ module Spanglify
 		}
 
 		to_swap.each do |key, value|
-		#create a capitalized version of the key and values
-					capitalized_key = key.capitalize
-					capitalized_value = value.capitalize
+		#create a capitalized versions of the key and values
+			capitalized_key = key.capitalize
+			capitalized_value = value.capitalize
 
-					#if the string contains the lowercase version of the English word(s)
-					#swap out for the lowercase Spanish version of the word(s)
-					if str.include? "#{key}"
-						str.gsub!(key, value)
+			upcase_key = key.upcase
+			upcase_value = value.upcase
 
-					#else if the string contains the capitalized version of the English word(s)
-					#swap out for the capitalized Spanish version of the word(s)
-					elsif str.include? "#{capitalized_key}"
-						str.gsub!(capitalized_key, capitalized_value)
-					else
-						next
-					end
-				end
-				#return the spanglified version of the string
-				return str
+			if str.include? "#{key}" #if the string contains the lowercase version of the English word(s)
+				str.gsub!(key, value) #swap out for the lowercase Spanish version of the word(s)
+			elsif str.include? "#{capitalized_key}" #if the string contains the capitalized version of the English word(s)
+				str.gsub!(capitalized_key, capitalized_value) #swap out for the capitalized version of the Spanish word(s)
+			elsif str.include? "#{upcase_key}" #if the string contains the uppercase version of the English word(s)
+				str.gsub!(upcase_key, upcase_value) #swap out for the uppercase version of the Spanish word(s)
+			else
+				next
 			end
+		end
+		return str #return the spanglified version of the string
 	end
+end
