@@ -22,7 +22,8 @@ Or install it yourself as:
 ```
 require "spanglify"
 
-Spanglify.process("I like to party but I don't Like to dance.")
+Spanglify::Spanglify.process("I like to party, but I don't like to dance.")
+#=>"Me gusta to party, pero I don't like to dance."
 ```
 
 
