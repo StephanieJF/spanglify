@@ -19,11 +19,11 @@ Or install it yourself as:
     $ gem install spanglify
 
 ## Usage
-```
+```ruby
 require "spanglify"
 
-Spanglify::Spanglify.process("I like to party, but I don't like to dance.")
-#=>"Me gusta to party, pero I don't like to dance."
+Spanglify::Spanglify.process("I like to dance, but I am very shy.")
+    #=> "Me gusta to dance, pero I am muy shy."
 ```
 
 
@@ -35,7 +35,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/spanglify.
+Bug reports and pull requests are welcome on GitHub at https://github.com/StephanieJF/spanglify.
 
 ## License
 
